@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">    
+      <link rel="stylesheet" href="style.css">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <title>Travia And Quiz</title>
+   </head>
+   <body>
+     
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Quiz Test</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>About Us</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Quiz</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Feedback</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Contact</span>
+                     </a>
+                  </li>
+               </ul>
+
+             
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <div class="nav__social">
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://github.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+
+               
+
+                  <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+               </div>
+            </div>
+
+          
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <footer>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/new1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/landscape_comp.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/new2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       
+      </footer>
+
+      <section>
+        <h1>Quiz time</h1>
+        <div class="container mt-5">
+            <div id="quiz-container" class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="question-title">Question Title</h5>
+                    <div id="answers-container" class="list-group"></div>
+                    <button id="next-btn" class="btn btn-primary mt-3">Next</button>
+                    <button id="submit-btn" class="btn btn-success mt-3 d-none">Submit</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container mt-5">
+            <h2>Feedback Form</h2>
+            <form id="feedback-form" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <div class="invalid-feedback">
+                        Please enter your name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                    <div class="invalid-feedback">
+                        Please enter a subject.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter your message.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    
+        <div class="toast-container position-fixed bottom-0 right-0 p-3" style="z-index: 11">
+            <div id="feedback-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="mr-auto">Feedback</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Your feedback has been submitted successfully!
+                </div>
+            </div>
+        </div>
+    
+      </section>
+      <section>
+       
+            <footer class="bg-light text-center text-lg-start mt-auto">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Contact Information</h5>
+                            <p>Email: traviaQuiz@yahoo.com</p>
+                            <p>Phone: +123 456 7890</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Follow Us</h5>
+                            <a href="#" class="btn btn-outline-primary btn-sm m-1">Facebook</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm m-1">Twitter</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm m-1">Instagram</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm m-1">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3 bg-dark text-white">
+                    &copy; 2024 Travia 
+                </div>
+            </footer>
+        </div>
+    
+        <div class="toast-container position-fixed bottom-0 right-0 p-3" style="z-index: 11">
+            <div id="feedback-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="mr-auto">Feedback</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Your feedback has been submitted successfully!
+                </div>
+            </div>
+        </div>
+    
+      </section>
+   
+      <script src="script.js"></script>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>
